@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js"></script>
+    <title>Гостиница "Мира"</title>
+</head>
+
+<body>
+
+<header> 
+    <a href="index.html"><div class="logo"><img src="logo.png" alt="" width="100px" height="40px"></div></a>
+<nav>
+    <a href='index.html'>ГЛАВНАЯ</a>
+    <a href='rooms.html'>НОМЕРА</a>
+    <a href='booking.html'>БРОНИРОВАНИЕ</a>
+</nav>
+<div class="info">
+    <p>Адрес: г. Нефтеюганск ул. Мира д. 8A </p> 
+    <p>Телефон: <a class="phone1" href="tel:+7 (3463) 20-00-01">+7 (3463) 20-00-01</a></p>
+</div>
+</header>
+    <h1>Добро пожаловать в нашу гостиницу!</h1>
+    <div class="letter">
+      <p>Мы рады приветствовать вас в нашем уютном и комфортном отеле, где каждый гость чувствует себя как дома. Наша гостиница предлагает вам современные номера, отличный сервис и удобное расположение, чтобы ваш отдых был незабываемым.</p>
+  
+      <p>Мы гордимся тем, что можем предоставить вам всё необходимое для комфортного пребывания: уютные номера, вкусные завтраки и дружелюбный персонал, всегда готовый помочь. Наша миссия — сделать ваш отдых максимально приятным и запоминающимся.</p>
+  
+      <p>Спасибо за выбор Гостиницы "Мира"! Мы надеемся, что вы проведёте у нас замечательное время и вернётесь к нам снова.</p>
+  
+      <p>С уважением и благодарностью,</p>
+      <p>Команда Гостиницы "Мира"</p>
+  </div>
+
+  <div class="card-container">
+    <div class="card">
+      <div class="card-image">
+        <img src="modern-rooms.jpg" alt="Современные номера">
+      </div>
+      <div class="card-text">
+        Современные номера
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-image">
+        <img src="excellent-service.jpg" alt="Отличный сервис">
+      </div>
+      <div class="card-text">
+        Отличный сервис
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-image">
+        <img src="fast-check-in.jpg" alt="Быстрое заселение">
+      </div>
+      <div class="card-text">
+        Быстрое заселение
+      </div>
+    </div>
+  </div>
+<h2>Почему к нам возвращаються снова и снова?</h2>
+  <div class="review-container">
+    <div class="review active">
+      <p id="review-text">"Гостиница очень понравилась. Приветливый персонал и хозяин гостиницы. Отличная сауна и бассейн. Только положительные эмоции."</p>
+      <h4 id="review-author">— Александр Сеничкин</h4>
+    </div>
+  </div>
+  
+  
+
+<script src="script.js"></script>
+
+
+<section class="hero-section">
+  <p class="textm">Мы будем рады, если вы оставите отзыв о нашем сервисе! <br> Ваши предложения и отзывы помогут нам стать лучше.</p>
+<form id="contact-form" action="https://formspree.io/f/xwplqbvy" 
+        method="POST">
+    <label>Ваше имя:
+        <input type="text" name="name" required>
+    </label>
+    
+    <label>Ваш email:
+        <input type="email" name="email" required>
+    </label>
+
+    <label>Ваше сообщение:
+        <textarea name="message" required></textarea>
+    </label>
+
+    <button type="submit">Отправить</button>
+
+    <p id="response-message" style="display: none;">Ваше сообщение отправлено!</p>
+</form>
+</section>
+<script src="script.js" defer></script>
+  
+  <a href='booking.html' class="btn">Забронировать номер</a>
+    
+
+
+    <!-- Контейнер для карты -->
+    <div class='map-container'>
+      <div style="position:relative;overflow:hidden;">
+          <a href="https://yandex.ru/maps/11184/nefteugansk/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Нефтеюганск</a>
+          <a href="https://yandex.ru/maps/11184/nefteugansk/house/ulitsa_mira_18a/Y0sYcAdkQEMAQFhrfXx4eXxmYA==/?ll=72.605677%2C61.097986&utm_medium=mapframe&utm_source=maps&z=18.31" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Мира, 18А — Яндекс Карты</a>
+          <iframe src="https://yandex.ru/map-widget/v1/?ll=72.605677%2C61.097986&mode=whatshere&whatshere%5Bpoint%5D=72.604825%2C61.098075&whatshere%5Bzoom%5D=17&z=18.31" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+      </div>
+    </div>
+</div>
+<footer>
+    <div class="footer-bottom">
+        <p>Оставь свой отзыв на <a class="ya" href="https://yandex.ru/maps/11184/nefteugansk/?add-review=true&ll=72.604105%2C61.096350&mode=poi&poi%5Bpoint%5D=72.604832%2C61.098106&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D154121624470&tab=reviews&z=17"><img src="ya.png" alt="" width="100"></a> Мы будем очень рады </p> 
+        <p><a class="phone2" href="tel:+7 (3463) 20-00-01">+7 (3463) 20-00-01</a></p>
+        <a href="index.html"><img src="logo.png" alt="" width="100"></a>
+        <p>© 2024 Гостиница "MIRA". Все права защищены.</p>
+    </div>
+</footer>
+ </body >
+ </html >
